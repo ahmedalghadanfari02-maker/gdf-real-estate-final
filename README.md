@@ -41,6 +41,11 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Apply database migrations
+
+## 💡 Challenges Faced & Learning
+* **CORS Errors:** I initially faced issues connecting React to Django, but I learned how to fix this by using `django-cors-headers`.
+* **Data Fetching:** It was a great learning experience to use `useEffect` and `useState` to handle dynamic data instead of static HTML.
+* **Docker:** Setting up the Dockerfile was new for me, and I learned how to containerize the application to make it portable.
 python manage.py makemigrations
 python manage.py migrate
 
