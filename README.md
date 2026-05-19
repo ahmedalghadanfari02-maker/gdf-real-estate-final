@@ -8,14 +8,8 @@ This project was developed as a final submission for the **SEN204** course under
 ## 🛠️ Tech Stack
 * **Frontend:** React (Vite), React Router, HTML, CSS.
 * **Backend:** Python, Django, Django REST Framework.
-* **Database:** SQLite (Default Django DB).
-* **Media Handling:** Pillow (for dynamic image uploads).
-
-## ✨ Features
-* Responsive modern UI with a Dark/Light Mode toggle.
-* Dynamic property fetching from the backend API.
-* Real-time client-side search and filtering (by name, city, and status).
-* Fully functional Django Admin panel to manage properties and images.
+* **Database:** SQLite.
+* **Media Handling:** Pillow.
 
 ---
 
@@ -41,11 +35,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Apply database migrations
-
-## 💡 Challenges Faced & Learning
-* **CORS Errors:** I initially faced issues connecting React to Django, but I learned how to fix this by using `django-cors-headers`.
-* **Data Fetching:** It was a great learning experience to use `useEffect` and `useState` to handle dynamic data instead of static HTML.
-* **Docker:** Setting up the Dockerfile was new for me, and I learned how to containerize the application to make it portable.
 python manage.py makemigrations
 python manage.py migrate
 
